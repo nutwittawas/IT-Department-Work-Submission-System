@@ -1,0 +1,163 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* หัวข้อ */
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* ปุ่มทั่วไป */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* ตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ส่วนหัวของตาราง */
+thead {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* ช่องของตาราง */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* สีสลับแถว */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ปุ่มแก้ไข */
+.edit-btn {
+    text-decoration: none;
+    background-color: #ffc107;
+    color: black;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+/* ปุ่มลบ */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* ฟอร์มแก้ไข */
+.container {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+select {
+    cursor: pointer;
+}
+
+/* ปุ่มบันทึก */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ทำให้หน้าตาดู responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    .btn, .edit-btn, .delete-btn, button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}

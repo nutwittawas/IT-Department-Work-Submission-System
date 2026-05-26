@@ -1,0 +1,114 @@
+/* 🔹 ปรับปรุงดีไซน์ตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ส่วนหัวของตาราง */
+thead {
+    background-color: #002c5c;
+    color: white;
+    font-weight: bold;
+}
+
+/* ช่องของตาราง */
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* จัดข้อความในช่องข้อมูลให้ตรงกลาง */
+th {
+    text-align: center;
+    font-size: 16px;
+}
+
+td {
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle; /* จัดให้อยู่กึ่งกลาง */
+}
+
+/* สีสลับแถว */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ปรับขนาดรูปภาพให้แสดงในตาราง */
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* เมื่อ hover ที่รูปจะขยาย */
+.thumbnail:hover {
+    transform: scale(1.2);
+}
+
+/* ปรับปุ่มลบให้สวยขึ้น */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+}
+
+.export-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.export-btn:hover {
+    background-color: #218838;
+}
+
+
+.export-btn:hover {
+    background-color: #218838;
+}
+
+/* ทำให้ตารางดูดีขึ้นบนมือถือ */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .thumbnail {
+        width: 40px;
+        height: 40px;
+    }
+
+    .delete-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
